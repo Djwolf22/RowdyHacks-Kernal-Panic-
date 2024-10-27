@@ -1007,7 +1007,7 @@ body {
   height: 1px;
 }
 .h-screen {
-  height: 100vh;
+  height: 60vh;
 }
 .\!max-h-\[calc\(100vh-7rem\)\] {
   max-height: calc(100vh - 7rem) !important;

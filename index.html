@@ -67,7 +67,7 @@
             data-nimg="1"
             class="aspect-auto h-auto w-full"
             style="color: transparent; width: 100%"
-            src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-black.svg"
+            src="_next/mlh-trust-badge-2025-black.svg"
         /></a>
       </div>
       <div class="relative block h-0 w-full dark:hidden">
@@ -88,23 +88,15 @@
             src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
         /></a>
       </div>
-      <main
-        class="relative z-10 flex min-h-full flex-col gap-16 overflow-x-hidden"
-      >
+      <main class="relative z-10 flex min-h-full flex-col gap-16 overflow-x-hidden">
         <div class="fixed inset-0 -z-10 h-screen w-screen overflow-hidden">
-          <div
-            class="flex min-h-screen flex-col items-center justify-center scale-x-125 scale-y-[2] h-full"
-          >
+          <div class="flex min-h-screen flex-col items-center justify-center scale-x-125 scale-y-[2] h-full">
             <canvas class="absolute inset-0 z-0" id="canvas"></canvas>
             <div class="relative z-10"></div>
           </div>
         </div>
-        <main
-          class="relative flex h-screen w-screen flex-col items-center justify-center"
-        >
-          <div
-            class="z-20 mx-4 flex flex-col items-center space-y-3 md:flex-row md:space-y-0"
-          >
+        <main class="relative flex h-screen w-screen flex-col items-center justify-center">
+          <div class="z-20 mx-4 flex flex-col items-center space-y-3 md:flex-row md:space-y-0">
             <img
               alt="Logo"
               loading="lazy"
@@ -116,20 +108,12 @@
               style="color: transparent"
               src="img/logo/rhbttf.svg"
             />
-            <h1
-              class="bg-gradient-to-b from-orange-600 via-yellow-300 to-orange-600 bg-clip-text p-5 pl-2 font-bttf text-5xl text-transparent sm:text-7xl lg:text-8xl"
-            >
-              <span class="text-7xl sm:text-8xl md:text-[length:inherit]"
-                >HACK&lt;</span
-              ><br />&amp;future&gt;
+            <h1 class="bg-gradient-to-b from-orange-600 via-yellow-300 to-orange-600 bg-clip-text p-5 pl-2 font-bttf text-5xl text-transparent sm:text-7xl lg:text-8xl">
+              <span class="text-7xl sm:text-8xl md:text-[length:inherit]">HACK&lt;</span><br />&amp;future&gt;
             </h1>
           </div>
-          <div
-            class="z-20 mx-2 mb-4 flex -translate-y-4 items-center text-center font-mono text-xl font-bold italic text-orange-400 md:mx-0 2xl:translate-x-[30px] 2xl:text-3xl"
-          >
-            <p class="text-md mb-[6px] mr-3 2xl:mb-[15px]">
-              Presented by<!-- -->
-            </p>
+          <div class="z-20 mx-2 mb-4 flex -translate-y-4 items-center text-center font-mono text-xl font-bold italic text-orange-400 md:mx-0 2xl:translate-x-[30px] 2xl:text-3xl">
+            <p class="text-md mb-[6px] mr-3 2xl:mb-[15px]">Presented by<!-- --></p>
             <img
               alt="Swivel Logo"
               loading="lazy"
@@ -142,40 +126,26 @@
               src="img/SWIVEL%20Knockout-w.svg"
             />
           </div>
-          <p
-            class="z-20 mx-2 mb-4 text-center font-mono text-xl font-bold italic text-orange-400 md:mx-0 2xl:text-3xl"
-          >
+          <p class="z-20 mx-2 mb-4 text-center font-mono text-xl font-bold italic text-orange-400 md:mx-0 2xl:text-3xl">
             October 26th - 27th 2024
           </p>
           <h1 class="w-full text-center font-mono text-orange-400 md:text-lg">
             SAN PEDRO I, UTSA
           </h1>
-
         </main>
-        
-
-      <div id="form">
-        <form id="thingy">
-          
-          <label class="text-input">What is your name?</label>
-          <input class="inputbox" type="text" name="Name">
-          <label class="text-input">What is your Group Name?</label>
-          <input class="inputbox" type="text" name="Name">
-          <label class="text-input">How many members do you have?</label>
-          <input class="inputbox" type="text" name="Name">
-
-          <div id="button"><button type="submit">Submit</button></div>
-
-        </form>
-      </div>
-        
-        
-        
-
-
-
-        
-
+        <div id="form">
+          <form id="thingy" action="video.html" method="get">
+            <label class="text-input" for="name">What is your name?</label>
+            <input class="inputbox" type="text" name="name" id="name">
+            <label class="text-input" for="group-name">What is your Group Name?</label>
+            <input class="inputbox" type="text" name="group-name" id="group-name">
+            <label class="text-input" for="members">How many members do you have?</label>
+            <input class="inputbox" type="number" name="members" id="members">
+            <div id="button">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
       </main>
     </div>
     <script
@@ -217,21 +187,6 @@
             <div
               class="flex items-center justify-between space-x-2 md:justify-center"
             >
-              <div class="hidden gap-x-4 md:flex">
-                <a href="sign-in.html"
-                  ><button
-                    class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input hover:text-accent-foreground h-10 px-4 py-2 bg-nav hover:bg-background"
-                  >
-                    Sign In
-                  </button></a
-                ><a href="sign-inbded.html"
-                  ><button
-                    class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
-                  >
-                    Register
-                  </button></a
-                >
-              </div>
               <template id="P:2"></template>
             </div>
           </div>
@@ -352,21 +307,6 @@
         '1c:[["$","$Lc",null,{"href":"/rsvp","className":"text-sm text-muted-foreground hover:text-primary hover:underline","children":"RSVP"}],["$","$Lc",null,{"href":"/faq","className":"text-sm text-muted-foreground hover:text-primary hover:underline","children":"FAQ"}],["$","$Lc",null,{"href":"/schedule","className":"text-sm text-muted-foreground hover:text-primary hover:underline","children":"Public Schedule"}]]\n',
       ]);
     </script>
-    <div hidden id="S:1">
-      <a
-        class="text-sm text-muted-foreground hover:text-primary hover:underline"
-        href="sign-in81c6.html"
-        >RSVP</a
-      ><a
-        class="text-sm text-muted-foreground hover:text-primary hover:underline"
-        href="faq.html"
-        >FAQ</a
-      ><a
-        class="text-sm text-muted-foreground hover:text-primary hover:underline"
-        href="schedule.html"
-        >Public Schedule</a
-      >
-    </div>
     <script>
       $RS("S:1", "P:1");
     </script>
