@@ -6,7 +6,6 @@
 :before {
   box-sizing: border-box;
   border: 0 solid #e5e7eb;
-  overflow: hidden;
 }
 :after,
 :before {
@@ -33,34 +32,82 @@ html {
   position: relative;
   outline:#000 2px solid;
   margin: 0 auto;
-  padding:10px;
+  margin-bottom: 100px;
+  padding:30px;
+  border-radius: 15px;
+  background-color: #122fa3;
+  box-shadow: #3b3b3b 10px 11px 20px;
+
 }
+
 
 .questions{
-  /*I want this centered in the div*/
   display: flex;
   justify-content: center;
+  color:orange;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
 }
 
-.input{  
-
+.input{
   position: relative;
   left:35%;
-
-
+  color: orange;
+  font-size: 16px;
+  font-weight: bold;
 }
+
 
 #fname{
   position: relative;
-  left: 20%;
+  left: 18%;
+  background-color: #1a46b3;
+  border: 1px solid #1a46b3;
+  border-radius: 5px;
+  color: rgb(175, 175, 175);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  caret-color: orange;
 }
+
+#fname:focus{
+  outline: 2px solid rgba(214, 147, 1, 0.771);
+}
+
 
 #fun{
+  margin-bottom:20px;
   position: relative;
   left: 28%;
+  accent-color: rgba(222, 151, 0, 0.806);
+  cursor:grab;
 }
 
+input[type="radio"]{
+  accent-color: rgba(222, 151, 0, 0.806);
+  cursor: pointer;
+}
 
+.button{
+  margin: 0 auto;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+/* make an outline with a gradient */
+  background: linear-gradient(90deg, orange, #c1ae04);
+  border: 1px solid black;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
 
 
 

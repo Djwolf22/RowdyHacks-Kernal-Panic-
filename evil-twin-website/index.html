@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" class="__variable_99f1fd">
   <!-- Mirrored from rowdyhacks.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Oct 2024 17:09:46 GMT -->
@@ -89,9 +90,9 @@
         /></a>
       </div>
       <main
-        class="relative z-10 flex min-h-full flex-col gap-16 overflow-x-hidden"
+        class="relative z-10 flex min-h-full flex-col gap-16 "
       >
-        <div class="fixed inset-0 -z-10 h-screen w-screen overflow-hidden">
+        <div class="fixed inset-0 -z-10 h-screen w-screen">
           <div
             class="flex min-h-screen flex-col items-center justify-center scale-x-125 scale-y-[2] h-full"
           >
@@ -103,7 +104,7 @@
           class="relative flex h-screen w-screen flex-col items-center justify-center"
         >
           <div
-            class="z-20 mx-4 flex flex-col items-center space-y-3 md:flex-row md:space-y-0"
+            class="z-20 mx-4 flex flex-col items-center space-y-3 md:flex-row md:space-y-0 overflow-hidden"
           >
             <img
               alt="Logo"
@@ -151,36 +152,42 @@
             SAN PEDRO I, UTSA
           </h1>
 
-          <div id="form">
-            <p class="questions">What is your first name?</p>
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              placeholder="Your name.."
-            />
-            <p class="questions">Is this your first Hackathon?</p>
-            <input
-              type="radio"
-              class="input"
-              id="yes"
-              name="hackathon"
-              value="yes"
-            />
-            <label class="input" for="yes">Yes</label>
-            <input
-              type="radio"
-              class="input"
-              id="no"
-              name="hackathon"
-              value="no"
-            />
-            <label class="input" for="no">No</label>
-            <p class="questions">How much fun are you having at this event?</p>
-            <input type="range" id="fun" name="fun" min="0" max="100" />
-          </div>
+
         </main>
       </main>
+
+      <div id="form" style="z-index: 100;">
+        <p class="questions">What is your first name?</p>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Your name.."
+        />
+        <p class="questions">Is this your first Hackathon?</p>
+        <input
+          type="radio"
+          class="input"
+          id="yes"
+          name="hackathon"
+          value="1"
+        />
+        <label class="input" for="yes">Yes</label>
+        <input
+          type="radio"
+          class="input"
+          id="no"
+          name="hackathon"
+          value="0"
+          
+        />
+        <label class="input" for="no">No</label>
+        <p class="questions">How much fun are you having at this event?</p>
+        <input type="range" id="fun" name="fun" min="0" max="100" />
+
+        <a href="video.html"><div class="button"><button type="submit">Submit</button></div><a/>
+
+      </div>
     </div>
     <script
       src="_next/static/chunks/webpack-e0f9165df628163a.js"
