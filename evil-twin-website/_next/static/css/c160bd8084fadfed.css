@@ -6,6 +6,7 @@
 :before {
   box-sizing: border-box;
   border: 0 solid #e5e7eb;
+  overflow: hidden;
 }
 :after,
 :before {
@@ -25,87 +26,44 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-@media only screen and (max-width: 400px){
-  .inputbox{
-    background-color: #001773;
-    color: rgb(171, 171, 171);
-    border: 7px solid #001773;
-    border-radius: 10px;
-    outline:lightblue;
-  }
-  
-  #button{
-  
-    font-weight:bold;
-    text-align:center;
-    height:min-content;
-    width:100%;
-    border: 5px solid #001773;
-    border-radius:10px;
-    margin-top: 15px;
-    color:orange;
-    background-color: #001773;
-  }
-  
-  .text-input{
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    Liberation Mono, Courier New, monospace;
-    color:orange;
-  }
-  
-  #form{
-  
-    display:block;
-    position: relative;
-    margin-left:20%;
-    margin-top: 0px;
-    align-items: center;
-    height: min-content;
-    width: min-content;
-    transform: translateY(-300px);
-      
-  }
-}
-
-.inputbox{
-  background-color: #001773;
-  color: rgb(171, 171, 171);
-  border: 7px solid #001773;
-  border-radius: 10px;
-  outline:lightblue;
-}
-
-#button{
-
-  font-weight:bold;
-  text-align:center;
-  height:min-content;
-  width:100%;
-  border: 5px solid #001773;
-  border-radius:10px;
-  margin-top: 15px;
-  color:orange;
-  background-color: #001773; 
-}
-
-.text-input{
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-  Liberation Mono, Courier New, monospace;
-  color:orange;
-}
 
 #form{
-
-  display:block;
-  position:relative;
-  margin-left:auto;
-  margin-right:auto;
-  align-items: center;
-  height: min-content;
-  width: min-content;
-  transform: translateY(-25%);
-    
+  width:fit-content;
+  height:fit-content;
+  position: relative;
+  outline:#000 2px solid;
+  margin: 0 auto;
+  padding:10px;
 }
+
+.questions{
+  /*I want this centered in the div*/
+  display: flex;
+  justify-content: center;
+}
+
+.input{  
+
+  position: relative;
+  left:35%;
+
+
+}
+
+#fname{
+  position: relative;
+  left: 20%;
+}
+
+#fun{
+  position: relative;
+  left: 28%;
+}
+
+
+
+
+
 
 body {
   margin: 0;
@@ -1208,6 +1166,7 @@ body {
 }
 .w-full {
   width: 100%;
+  margin-bottom: 50px;
 }
 .w-screen {
   width: 100vw;
