@@ -26,6 +26,8 @@ html {
 }
 
 
+
+
 #form{
   width:fit-content;
   height:fit-content;
@@ -37,7 +39,13 @@ html {
   border-radius: 15px;
   background-color: #122fa3;
   box-shadow: #3b3b3b 10px 11px 20px;
+  transform: translateY(-20%);
+}
 
+@media (max-width: 600px){
+  #form{
+    transform: translateY(-50%);
+  }
 }
 
 
