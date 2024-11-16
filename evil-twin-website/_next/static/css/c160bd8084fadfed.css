@@ -26,6 +26,8 @@ html {
 }
 
 
+
+
 #form{
   width:fit-content;
   height:fit-content;
@@ -37,6 +39,16 @@ html {
   border-radius: 15px;
   background-color: #122fa3;
   box-shadow: #3b3b3b 10px 11px 20px;
+<<<<<<< HEAD
+=======
+  transform: translateY(-20%);
+}
+
+@media (max-width: 600px){
+  #form{
+    transform: translateY(-50%);
+  }
+>>>>>>> 92df9a1b94a276e707a1b800edce6126d9984801
 }
 
 
@@ -84,6 +96,11 @@ html {
   cursor:grab;
 }
 
+#fun:active{
+  cursor: grabbing;
+}
+
+
 input[type="radio"]{
   accent-color: rgba(222, 151, 0, 0.806);
   cursor: pointer;
@@ -97,19 +114,17 @@ input[type="radio"]{
   position: relative;
   text-align: center;
   width: fit-content;
-/* make an outline with a gradient */
-  background: linear-gradient(90deg, orange, #c1ae04);
+  background: linear-gradient(90deg, orange, #f2b603);
   border: 1px solid black;
   color: #fff;
   font-size: 16px;
   font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
 
 }
 
-
-
+.button:hover{
+  cursor: grab;
+}
 
 body {
   margin: 0;
